@@ -1,0 +1,35 @@
+@import '../../styles/custom_colors.scss';
+
+.header-page {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    background-color: $custom-header;
+
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+
+    .header-content {
+        width: 50%;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        gap: 20px;
+    }
+
+    .form-card {
+        width: 500px;
+        padding: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: right;
+
+        background-color: $custom-form-card;
+    }
+}
+
