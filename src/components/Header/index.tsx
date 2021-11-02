@@ -11,9 +11,10 @@ export function Header() {
 
                     <h1>INSCREVA-SE AGORA!</h1>
 
-                    <p>Educação tecnológica na
-                    transformação digital</p>
-                    <span>Como a programação pode mudar a sua vida</span>
+                    <div className="header-text">
+                        <p>Educação tecnológica com quem sabe o que fala</p>
+                        <span>Aprenda como você pode mudar o mundo através da programação.</span>
+                    </div>
 
                     <p>Com Bill Gates e Mark Zuckerberg</p>
 
@@ -32,42 +33,50 @@ export function Header() {
 
                 <div className="form-card">
                     <form>
-                        <img width="160px" src={companyLogo} alt="Technology" />
+                        <div className="form-header">
+                            <img width="160px" src={companyLogo} alt="Technology" />
 
-                        <p>As vagas estão se esgotando. Preencha o formulário
-                            para se cadastrar e fazer parte da nova turma</p>
-
-                        <div className="form-name">
-                            <label htmlFor="name">Nome</label>
-                            <input type="text" name="name"/>
+                            <p>As vagas estão se esgotando. Preencha o formulário
+                                para se cadastrar e fazer parte da nova turma.</p>
                         </div>
 
-                        <div className="form-email">
-                            <label htmlFor="email">E-mail</label>
-                            <input type="email" name="email"/>
-                        </div>
+                        <div className="form-content">
+                            <div className="form-name">
+                                <label htmlFor="name">Nome:</label>
+                                <input type="text" name="name"/>
+                            </div>
 
-                        <div className="form-phone">
-                            <label htmlFor="phone">Telefone</label>
-                            <input type="number" name="phone"/>
-                        </div>
+                            <div className="form-email">
+                                <label htmlFor="email">E-mail:</label>
+                                <input type="email" name="email"/>
+                            </div>
 
-                        <div className="form-state">
-                            <label htmlFor="state-select">Estado</label>
-                            <select name="state-select">
-                                <option value="webdevelopment" selected>São Paulo</option>
-                                <option value="datascience">Rio de Janeiro</option>
-                                <option value="dataengineering">Minas Gerais</option>
-                            </select>
-                        </div>
+                            <div className="form-phone">
+                                <label htmlFor="phone">Telefone:</label>
+                                <input type="number" name="phone"/>
+                            </div>
 
-                        <div className="form-area">
-                            <label htmlFor="area-select">Área</label>
-                            <select name="area-select">
-                                <option value="webdevelopment">Web Development</option>
-                                <option value="datascience" selected>Data Science</option>
-                                <option value="dataengineering">Data Engineering</option>
-                            </select>
+                            <div className="form-state">
+                                <label htmlFor="state-select">Estado:</label>
+                                <select name="state-select">
+                                    <option value="webdevelopment" selected>São Paulo</option>
+                                    <option value="datascience">Rio de Janeiro</option>
+                                    <option value="dataengineering">Minas Gerais</option>
+                                </select>
+                            </div>
+
+                            <div className="form-area">
+                                <label htmlFor="area-select">Área:</label>
+                                <select name="area-select">
+                                    <option value="webdevelopment">Web Development</option>
+                                    <option value="datascience" selected>Data Science</option>
+                                    <option value="dataengineering">Data Engineering</option>
+                                </select>
+                            </div>
+
+                            <div className="form-button">
+                                <button>QUERO ME INSCREVER</button>
+                            </div>
                         </div>
 
                     </form>
