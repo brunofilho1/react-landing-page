@@ -17,17 +17,36 @@
         padding: 60px;
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: center;
         justify-content: center;
         gap: 20px;
+
+        .speakers i {
+            color: #4744d8;
+            margin-right: 10px;
+        }
+    }
+
+    .header-top-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        h1 {
+            padding: 10px;
+            border-radius: 8px;
+            background: $custom-button;
+        }
     }
 
     .header-text {
-        color: #ca29d9;
+        color: #cc44d8;
         padding: 50px;
 
-        border: 3px solid #ca29d9;
-        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
         p {
             text-transform: uppercase;
@@ -35,10 +54,18 @@
             font-weight: 700;
             color: #fff8fe;
         }
-        span {
-
-        }
     }
+
+    .address {
+        background-color: #242425;
+        padding: 50px;
+        border-radius: 8px;
+
+        i {
+            color: #ca29d9;
+            margin-right: 10px;
+    } 
+}
 
     .form-header {
         display: flex;

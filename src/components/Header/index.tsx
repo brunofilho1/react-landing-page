@@ -7,27 +7,35 @@ export function Header() {
     return (
             <header className="header-page">
                 <div className="header-content">
-                    <img width="260px" src={eventLogo} alt="OnlineCodeWeek" />
+                    <div className="header-top-text">
+                        <img width="260px" src={eventLogo} alt="OnlineCodeWeek" />
 
-                    <h1>INSCREVA-SE AGORA!</h1>
+                        <h1>INSCREVA-SE AGORA!</h1>
+                    </div>
 
                     <div className="header-text">
                         <p>Educação tecnológica com quem sabe o que fala</p>
                         <span>Aprenda como você pode mudar o mundo através da programação.</span>
                     </div>
 
-                    <p>Com Bill Gates e Mark Zuckerberg</p>
+                    <p className="speakers"><i className="fas fa-user-check"></i>Com Bill Gates e Mark Zuckerberg</p>
 
 
                     <div className="address">
-                    <h3>12 de Novembro</h3>
-                    <p>Horário: 8h às 11h</p>
-                    Local: Universidade de Cambridge, <br/>
-                    The Old Schools, Trinity Ln, Cambridge CB2 1TN, Reino Unido
+                        <h3>12 de Novembro</h3>
 
-                    <br/>
+                        <br/>
 
-                    Entrada monitorada: Traga seu crachá de identificação gerado no cadastro.
+                        <p><i className="far fa-clock"></i><b>Horário:</b> 8h às 11h</p>
+
+                        <br/>
+
+                        <p><i className="fas fa-map-marker-alt"></i><b>Local:</b> Universidade de Cambridge, <br/>
+                        The Old Schools, Trinity Ln, Cambridge CB2 1TN, Reino Unido</p>
+                        
+                        <br/>
+
+                        <p><i className="far fa-id-badge"></i><b>Entrada monitorada:</b> Traga seu crachá de identificação gerado no cadastro.</p>
                     </div>
                 </div>
 
@@ -75,7 +83,7 @@ export function Header() {
                             </div>
 
                             <div className="form-button">
-                                <button>QUERO ME INSCREVER</button>
+                                <button>INSCREVER-SE</button>
                             </div>
                         </div>
 

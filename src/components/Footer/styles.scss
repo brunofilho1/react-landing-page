@@ -5,4 +5,61 @@
     height: 50vh;
 
     background-color: $custom-footer;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+
+    gap: 30px;
+
+    .footer-icons {
+        display: flex;
+        gap: 20px;
+
+        cursor: pointer;
+
+        div {
+            width: 45px;
+            height: 40px;
+        }
+
+        img {
+            width: 40px;
+        }
+
+        img:hover {
+            width: 50px;
+            margin-top: -5px;
+            margin-left: -5px;
+            transition: 0.3s;
+        }
+    }
+
+    .footer-nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                opacity: .9;
+            }
+        }
+    }
+
+    p a {
+        text-decoration: none;
+        color: #fff;
+        
+        &:hover {
+            color: #ca29d9;
+        }
+    }
 }
