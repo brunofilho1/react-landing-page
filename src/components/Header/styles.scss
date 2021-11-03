@@ -5,7 +5,7 @@
     height: 100vh;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 10px;
 
     background-color: $custom-header;
@@ -37,19 +37,14 @@
         align-items: center;
         gap: 30px;
 
-        h1 {
-            padding: 10px;
-            text-transform: lowercase;
-        }
     }
 
     .header-text {
-        color: #cc44d8;
-        padding: 50px;
-
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        padding: 0px;
 
         p {
             text-transform: uppercase;
@@ -62,13 +57,32 @@
             background: linear-gradient(90deg, rgb(130, 64, 218) 29%, rgba(255,0,245,1) 93%); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            box-shadow: .6em 0 0 $custom-purple;
+            width: 44ch;
+            white-space: nowrap;
+            animation: caret .7s step-end infinite alternate, type 7s steps(63, end);
         }
+
+        @keyframes type {
+            0% {
+              width: 0;
+            }
+          
+          }
+          @keyframes caret { 
+            50% { 
+              box-shadow: 0 0 transparent;
+            }
+          }
+
     }
 
     .address {
         background-color: #242425;
         padding: 50px;
         border-radius: 8px;
+        box-shadow: 5px 10px 5px rgba(0,0,0,0.1);
 
         i {
             color: #ca29d9;
@@ -98,6 +112,7 @@
         border-radius: 8px;
 
         background-color: $custom-form-card;
+        box-shadow: 5px 10px 5px rgba(0,0,0,0.1);
 
         form div {
             margin-bottom: 20px;

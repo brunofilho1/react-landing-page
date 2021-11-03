@@ -6,15 +6,15 @@ import companyLogo from '../../assets/images/company-logo.png';
 export function Header() {
     return (
             <header className="header-page">
-                <div className="header-content">
+                <div className="header-content" id="home">
                     <div className="header-top-text">
                         <img width="260px" src={eventLogo} alt="OnlineCodeWeek" />
 
                     </div>
 
                     <div className="header-text">
-                        <p>Educação tecnológica com quem sabe o que fala</p>
-                        <span>Aprenda como você pode mudar o mundo através da programação.</span>
+                        <p>Faça parte da revolução</p>
+                        <span>$ você pode mudar o mundo através da programação</span>
                     </div>
 
                     <p className="speakers"><i className="fas fa-user-check"></i>Com Bill Gates e Mark Zuckerberg</p>
@@ -36,6 +36,7 @@ export function Header() {
 
                         <p><i className="far fa-id-badge"></i><b>Entrada monitorada:</b> Traga seu crachá de identificação gerado no cadastro.</p>
                     </div>
+
                 </div>
 
                 <div className="form-card">
