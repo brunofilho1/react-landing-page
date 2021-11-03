@@ -2,12 +2,13 @@
 
 .main-page {
     width: 100%;
-    height: 335vh;
+
     margin-left: 0 auto;
     background-color: $custom-main;
 
     font-family: 'Poppins', sans-serif;
 
+    position: static;
 
     .main-content {
         width: 980px;
@@ -120,6 +121,13 @@
                 border: 0;
                 border-radius: 5px;
             }
+        }
+
+        .footer-form-box {
+            margin-bottom: -120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .bottom-form-button {

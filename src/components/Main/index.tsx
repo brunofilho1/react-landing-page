@@ -51,7 +51,7 @@ export function Main() {
                     </p>
                 </div>
 
-                <h2>Palestrantes</h2>
+                <h2 id="speakers">Palestrantes</h2>
                 <div className="h2-line"></div>
 
                 <div className="speakers-info">
@@ -83,13 +83,13 @@ export function Main() {
                     </p>
                 </div>
 
-                <div>
+                <div className="footer-form-box">
                     <h2>GARANTA SUA INSCRIÇÃO</h2>
-                </div>
-                <div className="footer-form">
-                    <input type="email" placeholder="Digite seu e-mail..."/>
-                    <div className="">
-                        <button className="bottom-form-button">INSCREVER-SE</button>
+                    <div className="footer-form">
+                        <input type="email" placeholder="Digite seu e-mail..."/>
+                        <div className="">
+                            <button className="bottom-form-button">INSCREVER-SE</button>
+                        </div>
                     </div>
                 </div>
             </div>
