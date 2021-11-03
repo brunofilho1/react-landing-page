@@ -24,6 +24,10 @@
         .speakers i {
             color: #4744d8;
             margin-right: 10px;
+
+            background: linear-gradient(90deg, rgb(130, 64, 218) 29%, rgba(255,0,245,1) 93%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 
@@ -35,8 +39,7 @@
 
         h1 {
             padding: 10px;
-            border-radius: 8px;
-            background: $custom-button;
+            text-transform: lowercase;
         }
     }
 
@@ -54,6 +57,12 @@
             font-weight: 700;
             color: #fff8fe;
         }
+
+        span {
+            background: linear-gradient(90deg, rgb(130, 64, 218) 29%, rgba(255,0,245,1) 93%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
     .address {
@@ -64,6 +73,10 @@
         i {
             color: #ca29d9;
             margin-right: 10px;
+
+            background: linear-gradient(90deg, rgb(130, 64, 218) 29%, rgba(255,0,245,1) 93%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
     } 
 }
 
@@ -113,11 +126,13 @@
             cursor: pointer;
 
             transition: 0.2s;
+
+            opacity: .9;
             
         &:hover {
             font-size: 19px;
             font-weight: 700;
-            
+            opacity: 1;
         }
         }
     }

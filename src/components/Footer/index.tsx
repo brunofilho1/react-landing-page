@@ -26,7 +26,7 @@ export function Footer() {
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            <p>© 2021 <a href="">Bruno Filho</a> | All Rights Reserved</p>
+            <p>© 2021 <a target="_blank" href="https://github.com/brunofilho1/">Bruno Filho</a> | All Rights Reserved</p>
         </footer>
     )
 }

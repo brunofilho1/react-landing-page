@@ -10,7 +10,6 @@ export function Header() {
                     <div className="header-top-text">
                         <img width="260px" src={eventLogo} alt="OnlineCodeWeek" />
 
-                        <h1>INSCREVA-SE AGORA!</h1>
                     </div>
 
                     <div className="header-text">
@@ -30,8 +29,8 @@ export function Header() {
 
                         <br/>
 
-                        <p><i className="fas fa-map-marker-alt"></i><b>Local:</b> Universidade de Cambridge, <br/>
-                        The Old Schools, Trinity Ln, Cambridge CB2 1TN, Reino Unido</p>
+                        <p><i className="fas fa-map-marker-alt"></i><b>Local:</b> Universidade de Cambridge,
+                        The Old Schools, <br/> Trinity Ln, Cambridge CB2 1TN, Reino Unido</p>
                         
                         <br/>
 

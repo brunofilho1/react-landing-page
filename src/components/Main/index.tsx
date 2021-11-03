@@ -8,6 +8,7 @@ export function Main() {
         <main className="main-page">
             <div className="main-content">
                 <h2>Sobre o evento</h2>
+                <div className="h2-line"></div>
 
                 <div className="main-top-text">
                     <p>
@@ -49,6 +50,7 @@ export function Main() {
                 </div>
 
                 <h2>Palestrantes</h2>
+                <div className="h2-line"></div>
 
                 <div className="speakers-info">
                     <div className="photo bill-gates">
@@ -75,7 +77,7 @@ export function Main() {
                     <h2>GARANTA SUA INSCRIÇÃO</h2>
                 </div>
                 <div className="footer-form">
-                    <input type="text" placeholder="Digite seu email..."/>
+                    <input type="email" placeholder="Digite seu email..."/>
                     <div className="">
                         <button className="bottom-form-button">INSCREVER-SE</button>
                     </div>

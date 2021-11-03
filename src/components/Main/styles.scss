@@ -2,7 +2,7 @@
 
 .main-page {
     width: 100%;
-    height: 200vh;
+    height: 210vh;
     margin-left: 0 auto;
     background-color: $custom-main;
 
@@ -22,8 +22,14 @@
         h2 {
             font-weight: 700;
             padding: 20px;
-            border-bottom: 3px solid $custom-purple;
-            border-radius: 2px;
+        }
+
+        .h2-line {
+            width: 300px;
+            height: 4px;
+            background: linear-gradient(90deg, rgba(99,19,201,1) 29%, rgba(255,0,245,1) 93%); 
+            margin-top: -50px;
+            margin-bottom: 50px;
         }
 
         p {
@@ -43,6 +49,9 @@
             .fas {
                 font-size: 30px;
                 color: $custom-purple;
+                background: linear-gradient(90deg, rgb(130, 64, 218) 29%, rgba(255,0,245,1) 93%); 
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
 
@@ -58,7 +67,10 @@
                 gap: 10px;
 
                 img {
+                    background: linear-gradient(90deg, rgba(99,19,201,1) 29%, rgba(255,0,245,1) 93%); 
                     border-radius: 100px;
+                    padding: 5px;
+                    
                 }
             }
         }
@@ -98,10 +110,12 @@
     
                 transition: 0.2s;
 
+                opacity: .9;
+
                 &:hover {
                     font-size: 19px;
                     font-weight: 700;
-                    
+                    opacity: 1;
                 }
 
         }
