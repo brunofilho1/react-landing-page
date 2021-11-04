@@ -71,7 +71,7 @@ export function Main() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum, reiciendis pariatur molestias atque, quod nam labore obcaecati soluta repellat corporis. Corporis beatae totam et tenetur? Dolore consectetur quia incidunt.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum, reiciendis pariatur molestias atque, quod nam labore obcaecati soluta repellat corporis. Corporis beatae totam et tenetur? Dolore consectetur quia incidunt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum, reiciendis pariatur molestias atque, quod nam labore obcaecati soluta repellat corporis. Corporis beatae totam et tenetur? Dolore consectetur quia incidunt.
                     </p>
                 </div>
 
