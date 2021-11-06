@@ -13,8 +13,6 @@ Esse é o front de uma landing page simples, para promoção de algum evento, cu
 
 Por enquanto só está disponível a versão desktop sem responsividade pra mobile.
 
-<br>
-
 <h1 align="center">
     <img width="900px" alt="Landing Page" src=".github/page-main.png" />
 </h1>
