@@ -70,8 +70,10 @@
 
 
         .speakers-info {
+            width: 100%;
             display: flex;
-            gap: 290px;
+            align-items: center;
+            justify-content: space-around;
 
             .photo {
                 display: flex;
@@ -135,7 +137,7 @@
 
             display: flex;
             flex-direction: column;
-            padding: 80px;
+            padding: 50px;
             background-color: $custom-grey;
             box-shadow: 5px 10px 5px rgba(0,0,0,0.1);
 
@@ -199,6 +201,10 @@
     iframe {
         max-height: 200px;
     }
+
+    h2 {
+        margin-bottom: 20px;
+    }
     
     .main-page {
         .main-content {
@@ -210,6 +216,7 @@
     .main-text {
         display: flex;
         flex-direction: column;
+        
     }
 
     .main-text-with-icons {
@@ -223,10 +230,6 @@
         i {
             margin-right: 15px;
         }
-    }
-
-    .speakers-info {
-        
     }
 
 }
