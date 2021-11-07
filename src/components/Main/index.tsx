@@ -75,7 +75,7 @@ export function Main() {
                     </p>
                 </div>
 
-                <iframe width="864" height="511" src="https://www.youtube.com/embed/6Af6b_wyiwI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe src="https://www.youtube.com/embed/6Af6b_wyiwI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                 <div className="main-text">
                     <p>

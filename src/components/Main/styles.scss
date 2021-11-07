@@ -110,6 +110,10 @@
         }
 
         iframe {
+            width: 100%;
+            max-width: 864px;
+            height: 511px;
+
             border: 5px solid $custom-grey;
             border-radius: 8px;
             box-shadow: 5px 10px 5px rgba(0,0,0,0.1);
