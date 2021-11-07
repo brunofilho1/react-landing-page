@@ -206,4 +206,24 @@
             gap: 20px;
         }
     }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-text-with-icons {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+
+        margin-bottom: 50px;
+
+        i {
+            margin-right: 15px;
+        }
+    }
+
+    
 }
