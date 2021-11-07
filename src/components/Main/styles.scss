@@ -179,3 +179,31 @@
         }
     }
 }
+
+@media screen and (max-width: 980px) {
+    iframe {
+        max-height: 450px;
+    }
+}
+@media screen and (max-width: 780px) {
+    iframe {
+        max-height: 350px;
+    }
+}
+@media screen and (max-width: 580px) {
+    iframe {
+        max-height: 250px;
+    }
+}
+@media screen and (max-width: 480px) {
+    iframe {
+        max-height: 200px;
+    }
+    
+    .main-page {
+        .main-content {
+            padding: 20px;
+            gap: 20px;
+        }
+    }
+}
