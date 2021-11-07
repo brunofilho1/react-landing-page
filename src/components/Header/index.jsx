@@ -83,15 +83,6 @@ export function Header() {
                                     countryCallingCodeEditable={false}
                                 />
 
-                                <div className="form-state">
-                                    <label htmlFor="state-select">Estado:</label>
-                                    <select name="state-select">
-                                        <option value="webdevelopment" selected>São Paulo</option>
-                                        <option value="datascience">Rio de Janeiro</option>
-                                        <option value="dataengineering">Minas Gerais</option>
-                                    </select>
-                                </div>
-
                                 <div className="form-area">
                                     <label htmlFor="area-select">Área:</label>
                                     <select name="area-select">
