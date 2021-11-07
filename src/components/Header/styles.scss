@@ -1,19 +1,32 @@
 @import '../../styles/custom_colors.scss';
 
+header {
+    width: 100%;
+    background-color: $custom-header;
+
+}
+
 .header-page {
     width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    
     height: 100vh;
 
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
 
-    background-color: $custom-header;
+    gap: 10px;
 
     font-family: 'Poppins', sans-serif;
     color: #fff;
 
     .header-content {
+
+        width: 100%;
+        max-width: 1100px;
+
         padding: 60px;
         display: flex;
         flex-direction: column;

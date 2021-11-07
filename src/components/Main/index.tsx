@@ -36,7 +36,7 @@ export function Main() {
                     </p>
                 </div>
 
-                <div className="main-bottom-text">
+                <div className="main-text-with-icons">
                     <p><i className="fas fa-laptop-code"></i></p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
