@@ -206,8 +206,12 @@ header {
     }
 
     .header-text {
+        p {
+            width: 350px;
+        }
+
         span {
-            font-size: 12px;
+            font-size: 12.5px;
         }
     }
 
