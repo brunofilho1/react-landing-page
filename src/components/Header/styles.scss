@@ -201,6 +201,18 @@ header {
 }
 @media screen and (max-width: 415px) {
 
+    .header-page {
+        height: 100%;
+    }
+
+    .header-text {
+        
+    }
+
+    .speakers {
+        width: 300px;
+    }
+
     .address {
         max-width: 350px;
     } 
