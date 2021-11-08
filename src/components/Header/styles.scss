@@ -194,15 +194,26 @@ header {
 
 }
 @media screen and (max-width: 520px) {
-
-
-
     .form-card {
         width: 100%;
         max-width: 400px;
     }
 }
 @media screen and (max-width: 415px) {
+
+    .address {
+        max-width: 350px;
+
+        i {
+            color: #ca29d9;
+            margin-right: 10px;
+
+            background: linear-gradient(90deg, rgb(130, 64, 218) 29%, rgba(255,0,245,1) 93%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    } 
+
     .form-card {
         width: 100%;
         max-width: 350px;
