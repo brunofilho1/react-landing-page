@@ -86,7 +86,10 @@ export function Main() {
                 <div className="footer-form-box">
                     <h2>GARANTA SUA INSCRIÇÃO</h2>
                     <div className="footer-form">
-                        <input type="email" placeholder="Digite seu e-mail..."/>
+                        <input 
+                            type="email" 
+                            placeholder="Digite seu e-mail..."
+                            />
                         <div className="">
                             <button className="bottom-form-button">INSCREVER-SE</button>
                         </div>

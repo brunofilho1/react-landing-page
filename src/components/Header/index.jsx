@@ -10,6 +10,18 @@ import { useState } from 'react';
 export function Header() {
 
     const [country, setCountry] = useState()
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+
+    const handleSubmit = async (evt) => {
+        evt.preventDefault();
+    
+        try {
+          await alert(`Parabéns ${name}! Você já está matriculado.\n\nEm breve você receberá o crachá de participante no seu e-mail: ${email}.`);
+        } catch (err) {
+          alert(err);
+        }
+      }
 
     return (
             <header>
@@ -48,7 +60,7 @@ export function Header() {
                     </div>
 
                     <div className="form-card">
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div className="form-header">
                                 <img width="160px" src={companyLogo} alt="Technology" />
 
@@ -59,12 +71,24 @@ export function Header() {
                             <div className="form-content">
                                 <div className="form-name">
                                     <label htmlFor="name">Nome:</label>
-                                    <input type="text" name="name" placeholder="Ex: João da Silva"/>
+                                    <input 
+                                        type="text" 
+                                        name="name" 
+                                        placeholder="Ex: João da Silva"
+                                        required
+                                        onChange={e => setName(e.target.value)}
+                                        />
                                 </div>
 
                                 <div className="form-email">
                                     <label htmlFor="email">E-mail:</label>
-                                    <input type="email" name="email" placeholder="example@gmail.com"/>
+                                    <input 
+                                        type="email" 
+                                        name="email" 
+                                        placeholder="example@gmail.com"
+                                        onChange={e => setEmail(e.target.value)}
+                                        required
+                                        />
                                 </div>
 
                                 {/* <div className="form-phone">
@@ -93,7 +117,7 @@ export function Header() {
                                 </div>
 
                                 <div className="form-button">
-                                    <button>INSCREVER-SE</button>
+                                    <button type="submit">INSCREVER-SE</button>
                                 </div>
                             </div>
 
