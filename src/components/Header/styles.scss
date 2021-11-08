@@ -168,3 +168,43 @@ header {
         gap: 30px;
     }
 }
+@media screen and (max-width: 1120px) {
+    .header-page {
+    
+        height: 170vh;
+    
+        display: flex;
+        flex-direction: column;
+    
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 780px) {
+
+}
+@media screen and (max-width: 520px) {
+
+
+
+    .form-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .form-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
