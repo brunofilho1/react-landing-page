@@ -62,7 +62,7 @@ export function Header() {
                 <div className="modal-box modalBoxIsClose">
                   <div className="modal isClose">
                     <h1>Prontinho!</h1>
-                    <p>Parabéns {name}! Você já está matriculado. Em breve você receberá o crachá de participante no seu e-mail: {email}.</p>
+                    <p>Parabéns {name}! Você já está matriculado. Em breve você receberá o crachá de participante no seu e-mail: <span>{email}</span>.</p>
                     <button onClick={closeModal}>Fechar</button>
                   </div>
                   <div onClick={closeModal} className="modal-background modalBackgroundIsClose"></div>
