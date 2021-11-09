@@ -40,7 +40,6 @@ export function Header() {
   }
 
   function closeModal(event) {
-    event.preventDefault()
 
     let modalBox = document.querySelector('.modal-box')
     modalBox.classList.replace('modalBoxIsOpen', 'modalBoxIsClose')
@@ -50,6 +49,11 @@ export function Header() {
 
     let modalBackground = document.querySelector('.modal-backgrond')
     modal.classList.replace('modalBackgroundIsOpen', 'modalBackgroundIsClose')
+
+    let inputName = document.querySelector('#name')
+    inputName.value = ''
+    let inputEmail = document.querySelector('#email')
+    inputEmail.value = ''
   }
 
     const [country, setCountry] = useState()
@@ -117,6 +121,7 @@ export function Header() {
                                     <input 
                                         type="text" 
                                         name="name" 
+                                        id="name"
                                         placeholder="Ex: João da Silva"
                                         required
                                         onChange={e => setName(e.target.value)}
@@ -128,6 +133,7 @@ export function Header() {
                                     <input 
                                         type="email" 
                                         name="email" 
+                                        id="email"
                                         placeholder="example@gmail.com"
                                         onChange={e => setEmail(e.target.value)}
                                         required
