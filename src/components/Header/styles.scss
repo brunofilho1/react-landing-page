@@ -15,7 +15,7 @@ header {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     gap: 10px;
 
@@ -24,7 +24,7 @@ header {
 
     .header-content {
 
-        width: 100%;
+        width: 500px;
         height: 100%;
 
         padding: 60px;
@@ -109,7 +109,7 @@ header {
 }
 
 .form-card {
-    width: 800px;
+    width: 500px;
 
     border-radius: 8px;
 
