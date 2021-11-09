@@ -135,6 +135,8 @@
 	margin-top: 20px;
 	position: absolute;
 	margin-left: 60px;
+
+	visibility: hidden;
 }
 
 .PhoneInputCountrySelect:focus + .PhoneInputCountryIcon + .PhoneInputCountrySelectArrow {

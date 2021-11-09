@@ -5,26 +5,61 @@ import companyLogo from '../../assets/images/company-logo.png';
 
 import '../../styles/PhoneInput.scss'
 import PhoneInput from 'react-phone-number-input'
-import { useState } from 'react';
+import React, { useState } from 'react';
+
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
+
+
 
 export function Header() {
 
+  function openModal(event) {
+    event.preventDefault()
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+    const [modalIsOpen, setIsOpen] = React.useState(false);
     const [country, setCountry] = useState()
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
 
-    const handleSubmit = async (evt) => {
-        evt.preventDefault();
-    
-        try {
-          await alert(`Parabéns ${name}! Você já está matriculado.\n\nEm breve você receberá o crachá de participante no seu e-mail: ${email}.`);
-        } catch (err) {
-          alert(err);
-        }
-      }
-
     return (
             <header>
+
+              <div>
+                <Modal
+                  isOpen={modalIsOpen}
+                  onAfterOpen={afterOpenModal}
+                  onRequestClose={closeModal}
+                  style={customStyles}
+                  contentLabel="Example Modal"
+                >
+                  <h1>Prontinho!</h1>
+                  <p>Parabéns {name}! Você já está matriculado. Em breve você receberá o crachá de participante no seu e-mail: {email}.</p>
+                </Modal>
+              </div>
+
                 <div className="header-page">
                     <div className="header-content" id="home">
                         <div className="header-top-text">
@@ -60,7 +95,7 @@ export function Header() {
                     </div>
 
                     <div className="form-card">
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={openModal}>
                             <div className="form-header">
                                 <img width="160px" src={companyLogo} alt="Technology" />
 
