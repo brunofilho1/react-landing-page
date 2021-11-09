@@ -159,8 +159,8 @@ export function Header() {
                                 <div className="form-area">
                                     <label htmlFor="area-select">Área:</label>
                                     <select name="area-select">
-                                        <option value="webdevelopment">Web Development</option>
-                                        <option value="datascience" selected>Data Science</option>
+                                        <option value="webdevelopment" selected>Web Development</option>
+                                        <option value="datascience">Data Science</option>
                                         <option value="dataengineering">Data Engineering</option>
                                     </select>
                                 </div>
