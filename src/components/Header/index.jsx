@@ -27,19 +27,25 @@ export function Header() {
 
   function openModal(event) {
     event.preventDefault()
-    setIsOpen(true);
+
+    let modalBox = document.querySelector('.modal-box')
+    modalBox.classList.replace('modalBoxIsClose', 'modalBoxIsOpen')
+
+    let modal = document.querySelector('.modal')
+    modal.classList.replace('isClose', 'isOpen')
+
   }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    
+  function closeModal(event) {
+    event.preventDefault()
+
+    let modalBox = document.querySelector('.modal-box')
+    modalBox.classList.replace('modalBoxIsOpen', 'modalBoxIsClose')
+
+    let modal = document.querySelector('.modal')
+    modal.classList.replace('isOpen', 'isClose')
   }
 
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-    const [modalIsOpen, setIsOpen] = React.useState(false);
     const [country, setCountry] = useState()
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -47,18 +53,14 @@ export function Header() {
     return (
             <header>
 
-              <div>
-                <Modal
-                  isOpen={modalIsOpen}
-                  onAfterOpen={afterOpenModal}
-                  onRequestClose={closeModal}
-                  style={customStyles}
-                  contentLabel="Example Modal"
-                >
-                  <h1>Prontinho!</h1>
-                  <p>Parabéns {name}! Você já está matriculado. Em breve você receberá o crachá de participante no seu e-mail: {email}.</p>
-                </Modal>
-              </div>
+                <div className="modal-box modalBoxIsClose">
+                  <div className="modal isClose">
+                    <h1>Prontinho!</h1>
+                    <p>Parabéns {name}! Você já está matriculado. Em breve você receberá o crachá de participante no seu e-mail: {email}.</p>
+                    <button onClick={closeModal}>Fechar</button>
+                  </div>
+                  <div className="modal-background"></div>
+                </div>
 
                 <div className="header-page">
                     <div className="header-content" id="home">
