@@ -34,6 +34,9 @@ export function Header() {
     let modal = document.querySelector('.modal')
     modal.classList.replace('isClose', 'isOpen')
 
+    let modalBackground = document.querySelector('.modal-backgrond')
+    modal.classList.replace('modalBackgroundIsClose', 'modalBackgroundIsOpen')
+
   }
 
   function closeModal(event) {
@@ -44,6 +47,9 @@ export function Header() {
 
     let modal = document.querySelector('.modal')
     modal.classList.replace('isOpen', 'isClose')
+
+    let modalBackground = document.querySelector('.modal-backgrond')
+    modal.classList.replace('modalBackgroundIsOpen', 'modalBackgroundIsClose')
   }
 
     const [country, setCountry] = useState()
@@ -59,7 +65,7 @@ export function Header() {
                     <p>Parabéns {name}! Você já está matriculado. Em breve você receberá o crachá de participante no seu e-mail: {email}.</p>
                     <button onClick={closeModal}>Fechar</button>
                   </div>
-                  <div className="modal-background"></div>
+                  <div onClick={closeModal} className="modal-background modalBackgroundIsClose"></div>
                 </div>
 
                 <div className="header-page">
