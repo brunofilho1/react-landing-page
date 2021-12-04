@@ -9,9 +9,7 @@
 
 ## 💻 Sobre o projeto
 
-Esse é o front de uma landing page simples, para promoção de algum evento, curso ou qualquer outro produto digital.
-
-Por enquanto só está disponível a versão desktop sem responsividade pra mobile.
+Esse é o front de uma landing page simples e responsiva, para promoção de algum evento, curso ou qualquer outro produto digital.
 
 <h1 align="center">
     <img width="900px" alt="Landing Page" src=".github/page-main.png" />
